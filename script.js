@@ -1,5 +1,17 @@
+let res = 32;
+
 var container = document.querySelector("#container");
-for (i = 0; i < 16 * 16; i++) {
+container.setAttribute('style', `display: grid;
+grid-template-columns: repeat(${res}, ${100 / res}%);
+grid-template-rows: repeat(${res}, ${100 / res}%);
+position: absolute;
+right: 20%;
+height: 600px;
+width: 600px;
+border: 2px solid black;`);
+
+
+for (i = 0; i < res * res; i++) {
   var cell = document.createElement("div");
   // cell.innerHTML = "#-" + i;
   cell.setAttribute('style', 'height: 100%; width: 100%; border: 1px solid black;');
