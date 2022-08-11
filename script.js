@@ -1,4 +1,6 @@
 function generateGrid(res) {
+  let indicator = document.querySelector(".resolution");
+  indicator.textContent = `Resolution: ${res} x ${res}`;
   let body = document.querySelector("body");
   let container1 = document.createElement("div");
   container1.setAttribute('id', 'container');
