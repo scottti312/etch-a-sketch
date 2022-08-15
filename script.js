@@ -7,8 +7,6 @@ function generateGrid(res) {
   container.setAttribute('style', `display: grid;
   grid-template-columns: repeat(${res}, ${100 / res}%);
   grid-template-rows: repeat(${res}, ${100 / res}%);
-  position: absolute;
-  right: 60%;
   height: 600px;
   width: 600px;
   border: 2px solid black;`);
